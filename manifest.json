@@ -1,0 +1,41 @@
+{
+    "manifest_version": 2,
+    "name": "AnkiSearch",
+    "version": "0.0.1",
+    "description": "Searches for selected text in your Anki collection.",
+    "browser_specific_settings": {
+        "gecko": {
+            "id": "anki-search@abdnh.net"
+        }
+    },
+    "icons": {
+        "48": "icon.png"
+    },
+    "background": {
+        "scripts": [
+            "background.js"
+        ]
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "<all_urls>"
+            ],
+            "js": [
+                "search.js"
+            ]
+        }
+    ],
+    "permissions": [
+        "<all_urls>",
+        "webRequest"
+    ],
+    "commands": {
+        "search": {
+            "suggested_key": {
+                "default": "Ctrl+Shift+L"
+            },
+            "description": "Trigger an Anki search for selected text"
+        }
+    }
+}
