@@ -35,7 +35,7 @@
             "suggested_key": {
                 "default": "Ctrl+Shift+L"
             },
-            "description": "Trigger an Anki search for selected text"
+            "description": "Search for selected text in your Anki collection"
         }
     }
 }
