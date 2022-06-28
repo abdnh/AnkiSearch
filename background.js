@@ -1,4 +1,4 @@
-// // invokeAnki is adapted from Yomichan (https://github.com/FooSoft/yomichan)
+// Some code is adapted from Yomichan (https://github.com/FooSoft/yomichan)
 
 const server = "http://127.0.0.1:8765";
 
